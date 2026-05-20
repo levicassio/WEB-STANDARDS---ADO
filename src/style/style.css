@@ -128,3 +128,51 @@ header > .content-header {
     gap: 16px;
 }
 
+footer > .container-footer {
+    padding: 80px 80px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.content-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links-footer > nav {
+    display: flex;
+    gap: 32px;
+    padding: 32px 0;
+}
+
+.text-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.text-footer > p {
+    font-size: 12px;
+    
+}
+
+form > #email-footer {
+    width: 265px;
+    height: 40px;
+}
+
+.credits-footer > .row-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 715px;
+
+    padding: 32px 0px;
+}
+
+.nav-credits {
+    display: flex;
+    gap: 24px;
+}
+

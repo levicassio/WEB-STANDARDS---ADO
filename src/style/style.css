@@ -29,36 +29,40 @@
 
 header {
     width: 100%;
-    height: 72px;
+    height: auto;
 
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    gap: 30px;
 
-    padding: 16px 64px;
+    padding: 16px 5%;
 }
 
 header > .content-header {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 30px;
 
 }
 
 .nav-header {
     display: flex;
-    gap: 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 }
 
 .actions-header {
     display: flex;
-    gap: 16px;
+    gap: 20px;
 }
 
 #mega-menu {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 #mega-menu > .menu-menu {
@@ -66,13 +70,14 @@ header > .content-header {
     align-items: center;
     gap: 48px;
 
-    padding: 32px 64px;
+    padding: 32px 5%;
 }
 
 .menu-list-one,
 .menu-list-two {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 24px;
 }
 
@@ -80,15 +85,17 @@ header > .content-header {
 .nav-menu-two {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 16px;
 }
 
 .content-menu {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 48px;
 
-    padding: 16px 64px;
+    padding: 16px 5%;
 }
 
 .title-menu {
@@ -98,47 +105,60 @@ header > .content-header {
 }
 
 .title-content-menu {
+    padding: 0px 5%;
+    height: auto;
+
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 16px;
+}
+
+.actions-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #hero > img {
     width: 100%;
-    height: 700px;
+    height: auto;
 }
 
 #hero > .container-hero {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     gap: 80px;
 
-    padding: 80px 80px;
+    padding: 40px 5%;
 }
 
 .content-hero {
     display: flex;  
     flex-direction: column;
+    align-items: center;
     gap: 32px;
 }
 
 .actions-hero {
     display: flex;
-    gap: 16px;
+    gap: 20px;
 }
 
 footer > .container-footer {
-    padding: 80px 80px;
+    padding: 40px 5%;
 
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    align-items: center;
+    gap: 40px;
 }
 
 .content-footer {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 
 .links-footer > nav {
@@ -150,7 +170,7 @@ footer > .container-footer {
 .text-footer {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
 }
 
 .text-footer > p {
@@ -159,20 +179,118 @@ footer > .container-footer {
 }
 
 form > #email-footer {
-    width: 265px;
-    height: 40px;
+    width: 100%;
+    height: 30px;
 }
 
 .credits-footer > .row-footer {
     display: flex;
-    justify-content: space-between;
-    gap: 715px;
+    flex-direction: column;
+    gap: 80px;
 
-    padding: 32px 0px;
+    padding: 32px 5%;
 }
 
 .nav-credits {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 24px;
+}
+
+
+@media (min-width: 768px) {
+    
+}
+
+@media (min-width: 1280px) {
+
+
+header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 64px;
+}
+
+header > .content-header {
+    flex-direction: row;
+    gap: 24px;
+}
+
+.nav-header {
+    flex-direction: row;
+    gap: 32px;
+}
+
+#mega-menu {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#mega-menu > .menu-menu {
+    padding: 32px 64px;
+}
+
+.content-menu {
+    flex-direction: row;
+    padding: 16px 64px;
+}
+
+.title-content-menu {
+    padding: 0;
+    align-items: flex-start;
+}
+
+.actions-menu {
+    align-items: flex-start;
+}
+
+#hero > .container-hero {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    gap: 80px;
+}
+
+.content-hero {
+    align-items: flex-start;
+}
+
+.container-footer {
+    padding: 80px;
+}
+
+.content-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.links-footer > nav {
+    flex-direction: row;
+    gap: 32px;
+    width: 100%;
+}
+
+.credits-footer > .row-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 32px 0%;
+}
+
+.nav-credits {
+    flex-direction: row;
+    gap: 24px;
+}
+
+form > #email-footer {
+    width: 265px;
+    height: 40px;
+}
+
 }
 
